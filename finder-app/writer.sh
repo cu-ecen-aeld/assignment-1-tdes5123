@@ -1,7 +1,11 @@
+#!/bin/sh
+
 writefile="$1"
 writestr="$2"
 
-if [[ $# -eq 0 || -z "$2" || -z "$1" ]]; then
+echo "woooo WRITER"
+
+if [ $# -eq 0 ] || [ -z "$2" ] || [ -z "$1" ]; then
 	echo "Missing arguments"
 	exit 1
 fi
